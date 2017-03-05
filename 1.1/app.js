@@ -8,6 +8,6 @@ function sortWord(word) {
   return '';
 }
 
-const areWordsAnagrams = sortWord(firstWord) === sortWord(secondWord);
+var areWordsAnagrams = sortWord(firstWord) === sortWord(secondWord);
 
 alert(areWordsAnagrams ? 'They are anagrams' : 'Soryan');
