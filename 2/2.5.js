@@ -1,8 +1,11 @@
-function sum(num, result = 0) {
-  if (!num) return result;
-  result = result + num;
-  return function(num1) {
-    return sum.call(null, num1, result);
+function sum(num) {
+  var result = num;
+  return function internal(num1) {
+    if (typeof num1 === 'undefined') {
+      return result;
+    }
+    result = result + num1;
+    return internal;
   }
 }
 
