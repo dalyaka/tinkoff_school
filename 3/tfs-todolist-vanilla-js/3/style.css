@@ -1,0 +1,214 @@
+
+/*============================
+=            MAIN            =
+============================*/
+
+body {
+    background: #f5f5f5;
+    color: #4d4d4d;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.head {
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*=====  End of MAIN  ======*/
+
+
+/*================================
+=            ADD TASK            =
+================================*/
+
+.add-task {
+    padding: 10px;
+    background: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.add-task__input {
+    font-size: 14px;
+    border: none;
+    width: 100%;
+}
+
+.add-task__input:focus {
+    outline: none;
+}
+
+/*=====  End of ADD TASK  ======*/
+
+
+/*===============================
+=            FILTERS            =
+===============================*/
+
+.filters {
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+.filters__item {
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid;
+    padding: 5px;
+
+    color: slategray;
+
+    border-color: #f5f5f5;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.filters__item_selected {
+    border-color: inherit;
+}
+
+.filters__item:hover{
+    background-color: lightyellow;
+}
+
+/*=====  End of FILTERS  ======*/
+
+
+/*============================
+=            LIST            =
+============================*/
+
+.list {
+    margin: 10px 0 0;
+    background: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.list__item {
+    display: block;
+}
+
+.list__item:hover{
+    background-color: lightyellow;
+}
+
+
+/*=====  End of LIST  ======*/
+
+
+/*============================
+=            TASK            =
+============================*/
+
+.task {
+    padding: 10px 40px;
+    border-bottom: 1px solid #ededed;
+    cursor: pointer;
+    position: relative;
+}
+
+.task_done {
+    text-decoration: line-through;
+    color: lightgray;
+}
+
+.task__status {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    color: lightgrey;
+}
+
+.task__name {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.task__input {
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.task__input:focus{
+    outline: none;
+}
+
+.task_done .task__status {
+    color: lightgreen;
+}
+
+.task_done .task__status::after {
+    content: "\2713"; /*✓ CHECK MARK*/
+}
+
+.task__delete-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-size: 12px;
+    visibility: hidden;
+}
+
+.task:hover .task__delete-button {
+    visibility: visible;
+}
+
+/*=====  End of TASK  ======*/
+
+
+/*=================================
+=            STATISTIC            =
+=================================*/
+
+.statistic {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.statistic__total {
+    display: inline-block;
+    font-style: normal;
+}
+
+.statistic__done {
+    display: inline-block;
+    color: lightgreen;
+    font-style: normal;
+}
+
+.statistic__left {
+    display: inline-block;
+    color: lightcoral;
+    font-style: normal;
+}
+
+/*=====  End of STATISTIC  ======*/
+
+.invisible {
+  display: none;
+}

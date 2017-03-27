@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO List</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<h1 class="head">TODO List</h1>
+<div class="container">
+  <div class="add-task">
+    <input class="add-task__input" placeholder="Имя задачи" autofocus>
+  </div>
+  <div class="filters">
+    <div data-filter="all" class="filters__item filters__item_selected">все</div>
+    <div data-filter="done" class="filters__item">завершенные</div>
+    <div data-filter="todo" class="filters__item">незавершенные</div>
+  </div>
+  <ul class="list">
+
+  </ul>
+  <div class="statistic">
+    Всего:
+    <div class="statistic__total">3</div>
+    Завершено:
+    <div class="statistic__done">1</div>
+    Осталось:
+    <div class="statistic__left">2</div>
+  </div>
+</div>
+<template id="todoTemplate" style="display: none">
+  <li class="list__item task">
+    <div class="task__status task__status_todo"></div>
+    <span class="task__name">{{TODO}}</span>
+    <div class="task__delete-button">❌</div>
+  </li>
+</template>
+<script src="app.js"></script>
+</body>
+</html>
