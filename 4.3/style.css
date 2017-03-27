@@ -1,0 +1,40 @@
+.github-user {
+        width: 280px;
+        border: 2px solid #434343;
+        padding: 10px;
+        overflow: hidden;
+        font-family: sans-serif;
+    }
+
+    .github-user img {
+        width: 60px;
+        height: auto;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .github-user a {
+        display: block;
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    .error {
+        background-color: rgba(200, 0, 0, 0.2);
+        border-left: 4px solid rgba(200, 0, 0, 0.7);
+        padding: 10px;
+        font-family: sans-serif;
+    }
+
+    .random-button {
+        margin: 20px 0;
+        font-size: 20px;
+        border: 2px solid #434343;
+        padding: 12px 16px;
+        border-radius: 4px;
+        background: #ffffff;
+    }
+
+    .hidden {
+        display: none !important;
+    }
